@@ -65,3 +65,11 @@ function generateDog() {
     }
   } 
 
+  function reset() {
+    const flexDogGen = document.getElementById('flex-dog-gen');
+    while (flexDogGen.firstChild) {
+      flexDogGen.removeChild(flexDogGen.firstChild);
+    }
+    console.log('Reset completed');
+  }  
+
