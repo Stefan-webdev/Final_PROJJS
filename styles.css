@@ -1,0 +1,48 @@
+.container-1 {
+  border: 5px solid red;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+};
+
+.flex-box-container-1 {
+  display: flex;
+  border: 2px solid blueviolet;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-box-container-1 div {
+  display:flex;
+  padding: 10px;
+  border: 1px solid black;
+  align-items: center;
+}
+
+ .flex-box-container-2 img {
+  margin: 10px;
+  box-shadow: 0px 10px 50px blue;
+ }
+
+ .dog-image {
+  cursor: pointer;
+ }
+
+ #flex-dog-gen {
+  position: relative;
+ }
+
+ #breed-display {
+  position: absolute;
+  background-color: aquamarine;
+  border: 2px solid brown;
+  padding: 5px;
+  z-index: 100;
+ }
+
+ .flex-box-rps img:hover{
+    box-shadow: 0px 10px 50px palevioletred;
+ }
+
