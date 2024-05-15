@@ -1,16 +1,21 @@
- document.addEventListener('DOMContentLoaded', function(){
+// Event Listener here for when the DOM content is fully loaded
+  document.addEventListener('DOMContentLoaded', function(){
   console.log('DOM fully loaded and parsed');
+  // Logs to the console that the DOM content has been fully loaded and parsed
 })
 
+// event listeners to the button with id 'dog-generator' which triggers clicked 
 document.getElementById('dog-generator').addEventListener('click', generateDog);
 document.getElementById('reset').addEventListener('click', reset);
+// Event Listener also added to reset
 
-
+// this function will asynchronously fetch a random dog image for the dog.CEOapi
 async function generateDog() {
-  console.log('Generating dogs...');
+  console.log('Generating dog...');
+  // Logs to the console that the dog generation process has begun
 
   try {
-   const response = await fetch('https://dog.ceo/api/breeds/image/random/5');
+   const response = await fetch('https://dog.ceo/api/breeds/image/random');
   const data = await response.json();
   //Parses JSON response
 
@@ -48,7 +53,7 @@ async function generateDog() {
     }
       // logs an error if API call is unsuccessful. 
     } catch (error) {
-      console.error('Error fetching dog images:', error);
+      console.log('Error fetching dog images:', error);
   }
 
 }
@@ -82,6 +87,7 @@ async function generateDog() {
     }
     console.log('Reset completed');
   }  
+
 
 
 
